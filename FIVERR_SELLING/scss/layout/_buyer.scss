@@ -1,0 +1,133 @@
+.buyer{
+    position: relative;
+    background-color: #fff;
+    padding-top: 30px !important;
+    padding-bottom: 60px !important;
+    .wrapper{
+        width: 1200px;
+        margin: 0 auto;
+        h2{
+            text-align: center;
+            padding-bottom: 30px;
+            color: $color-black-0;
+            font-weight: $fw-bold-0;
+        }
+        ul{
+            list-style: none;
+            width: 100%;
+            li{
+                background-color: #f7f7f7;
+                width: 50%;
+                height: 289px;
+                position: relative;
+                float: left;
+                blockquote{
+                    font: italic 18px/140% Georgia,'Times New Roman',serif;
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    padding: 0 25px;
+                    width: 50%;
+                    box-sizing: border-box;
+                }
+                cite{
+                    font: normal 14px/140% "Macan","Helvetica Neue",Helvetica,Arial,sans-serif;
+                    position: absolute;
+                }
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    border-top: 19px transparent solid;
+                    border-bottom: 19px transparent solid;
+                    position: absolute;
+                    z-index: 2;
+                    left: 50%;
+                    top: 50%;
+                }
+                &::after{
+                    content: '';
+                    background-color: transparent;
+                    background-repeat: no-repeat;
+                    background-position: top center;
+                    float: right;
+                    width: 50%;
+                    height: 289px;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                }
+            }
+            li.buyer1{
+                &::before{
+                    border-right: 25px #f7f7f7 solid;
+                    -webkit-transform: translate3d(-24px,-50%,0);
+                    transform: translate3d(-24px,-50%,0);
+                }
+                &::after{
+                    background-image: url(./../img/buyer1.jpg);
+                    left: 0%;
+                }
+            }
+            li.buyer2{
+                &::before{
+                    border-right: 25px #f7f7f7 solid;
+                    -webkit-transform: translate3d(-24px,-50%,0);
+                    transform: translate3d(-24px,-50%,0);
+                }
+                &::after{
+                    background-image: url(./../img/buyer2.jpg);
+                    left: 0%;
+                }
+            }
+            li.buyer1 ,li.buyer2{
+                blockquote{
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+                cite{
+                    left: 55%;
+                    top: 75%;
+                }
+            }
+            li.buyer3{
+                &::before{
+                    border-left: 25px #f7f7f7 solid;
+                    -webkit-transform: translate3d(-1px,-50%,0);
+                    transform: translate3d(-1px,-50%,0);
+                }
+                &::after{
+                    background-image: url(./../img/buyer3.jpg);
+                    left: 50%;
+                }
+            }
+            li.buyer4{
+                &::before{
+                    border-left: 25px #f7f7f7 solid;
+                    -webkit-transform: translate3d(-1px,-50%,0);
+                    transform: translate3d(-1px,-50%,0);
+                }
+                &::after{
+                    background-image: url(./../img/buyer4.jpg);
+                    left: 50%;
+                }
+            }
+            li.buyer3 ,li.buyer4{
+                blockquote{
+                    top: 50%;
+                    left: 0%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+                cite{
+                    left: 4%;
+                    top: 75%;
+                }
+            }
+        }
+    }
+    .clear-both{
+        clear: both;
+    }
+}

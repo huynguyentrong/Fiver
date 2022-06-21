@@ -1,0 +1,97 @@
+.learn {
+  padding: 48px 100px 20px;
+  position: relative;
+  .row {
+    display: flex;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    padding: 40px 0;
+    .left{
+        padding: 24px 0 4px 64px;
+        .learn-logo{
+            background: transparent url(./../img/learn-logo.svg) no-repeat 0 0;
+            height: 45px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        h2{
+            color: #404145;
+            font-size: $fs-3 +3;
+            line-height: 120%;
+            font-weight: $fw-bold-1;
+        }
+        p{
+            font-size: $fs-2;
+            color: $color-gray-0;
+            line-height: 26px;
+            padding: 12px 0 25px;
+        }
+        button{
+            background-color: $color-green-0;
+            font-size: $fs-0;
+            font-weight: $fw-bold-0;
+            color: #fff;
+            padding: 12px 40px;
+            border-radius: 4px;
+            margin-top: $mg-1 ;
+        }
+    }
+    .right{
+        padding: 0 64px;
+        .learn__video{
+            position: relative;
+            a{
+                // color: #1dbf73;
+                text-decoration: none;
+                i{
+                    font-size: 37px;
+                    background-color: gray;
+                    color: white;
+                    width: 67px;
+                    height: 67px;
+                    border-radius: 50%;
+                    padding-left: 23px;
+                    padding-top: 15px;
+                    position: absolute;
+                    top: 30%;
+                    left: 40%;
+                }
+            &:hover{
+                i{
+                    background-color: black;
+                }
+            }
+            }
+            .video-description{
+                .description-title{
+                    h3{
+                        font-size: 18px;
+                        color: #0e0e0f;
+                        display: inline-block;
+                    }
+                    span{
+                        background-color: $color-green-0;
+                        color: white;
+                        font-weight: $fw-bold-0;
+                        padding: 0 9px;
+                    }
+                }
+                .description-rating{
+                    i{
+                        color: #ffc100;
+                    }
+                    span:nth-child(2){
+                        color: #ffc100 !important;
+                        font-weight: $fw-bold-1;
+                    }
+                    span:last-child{
+                        font-size: $fs-1;
+                    }
+                }
+            }
+        }
+    }
+  }
+}

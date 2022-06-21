@@ -1,0 +1,24 @@
+.selling{
+    font-size: $fs-2;
+    background-color: #fff;
+    .wrapper{
+        padding-top: 50px;
+        padding-bottom: 70px;
+        p{
+            margin-bottom: 30px;
+            color: $color-black-1;
+        }
+        a{
+            background-color: $color-green-0;
+            font-size: $fs-0;
+            font-weight: $fw-bold-0;
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 4px;
+            &:hover{
+                background-color: #3fca89;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.process{
+    width: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding-top: 50px;
+    h2{
+    font-weight: $fw-bold-1;
+    }
+    .row{
+        padding: 50px 0;
+        h3{
+            font-size: $fs-2 +2;
+            color: #555;
+            font-weight: $fw-bold-1;
+            text-align: center;
+            &::before{
+                background: transparent url(./../img/heart.svg) no-repeat 0 0;
+                content: '';
+                display: block;
+                background-size: 350px;
+                width: 50px;
+                height: 50px;
+                margin: 0 auto 15px;
+            }
+        }
+        h3.gig::before{
+            background-position: -200px 0;
+        }
+        h3.work::before{
+            background-position: -294px 0;
+            background-size: 419px;
+            width: 64px;
+        }
+    }
+}
